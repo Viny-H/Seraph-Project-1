@@ -26,6 +26,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -159,6 +160,17 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/* midia queries */
+@media (min-width: 768px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
 
 /* PRA DEIXAR O SITE ATIVO/PUBLICO, TEM QUE DEIXAR O VS CODE ABERTO, ABRIR A PÁGINA PELO "LIVE SERVER", E NO "CMD" DO PC, DIGITAR "ngrok http 5500". ASSIM, QUALQUER UM QUE ABRIR O LINK:"https://oversold-overfeed-shirt.ngrok-free.dev/" CONSGEGUIRÁ ACESSAR O SITE. */
